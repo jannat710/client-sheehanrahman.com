@@ -1,5 +1,7 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
+import LeftColumn from "@/partials/components/LeftColumn/LeftColumn";
+import RightColumn from "@/partials/components/RightColumn/RightColumn";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -11,7 +13,13 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
-    </html>
+    <body className={`h-[100dvh] w-[100vw] bg-[#1A1A1A] text-white grid grid-cols-[25%,75%]`}>
+      <LeftColumn />
+      <div className="relative w-full h-full">
+        <RightColumn />
+        <main className="">{children}</main>
+      </div>
+    </body>
+  </html>
   );
 }
