@@ -1,8 +1,12 @@
+import SectionWrapper from "@/partials/sections/Section/SectionWrapper"
+import AppCard from "./components/AppCard"
 
 
 function page() {
   return (
-    <div>Made Apps page</div>
+    <SectionWrapper extraClass={"pt-0 pb-0"}>
+      <AppCard />
+    </SectionWrapper>
   )
 }
 

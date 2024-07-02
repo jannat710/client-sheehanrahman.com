@@ -3,7 +3,7 @@ import Navbar from "./Navbar/Navbar"
 
 function RightColumn() {
   return (
-    <div ><Navbar /></div>
+    <div><Navbar /></div>
   )
 }
 

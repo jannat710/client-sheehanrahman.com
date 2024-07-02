@@ -7,6 +7,9 @@
   body {
     font-family: "Jura", sans-serif;
   }
+  section{
+    padding: 0px 150px;
+  }
 }
 .text-upright {
   writing-mode: horizontal-tb;
@@ -34,6 +37,9 @@
   .vertical-text {
     writing-mode: vertical-rl;
     transform: rotate(180deg);
+  }
+  section{
+    padding: 0px 20px;
   }
 }
 

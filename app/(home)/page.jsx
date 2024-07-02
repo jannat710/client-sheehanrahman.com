@@ -1,9 +1,14 @@
+import React from 'react'
+import IntroductionSection from './components/IntroductionSection'
+import ConsultationModal from './components/ConsultationModal'
 
-
-function Homepage() {
+function page() {
   return (
-    <div>Home page</div>
+    <section>
+      <IntroductionSection />
+      <ConsultationModal />
+    </section>
   )
 }
 
-export default Homepage
+export default page
